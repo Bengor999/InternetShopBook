@@ -31,7 +31,7 @@ export default class Carousel {
           alt="slide"
         />
         <div class="carousel__caption">
-          <span class="carousel__price">€${item.price.toFixed(2)}</span>
+          <span class="carousel__price">₽${item.price.toFixed(2)}</span>
           <div class="carousel__title">${item.name}</div>
           <button type="button" class="carousel__button">
             <img src="/assets/images/icons/plus-icon.svg" alt="icon" />

@@ -75,7 +75,7 @@ export default class Cart {
               <img src="/assets/images/icons/square-plus-icon.svg" alt="plus">
             </button>
           </div>
-          <div class="cart-product__price">€${product.price.toFixed(2)}</div>
+          <div class="cart-product__price">₽${product.price.toFixed(2)}</div>
         </div>
       </div>
     </div>`);
@@ -83,24 +83,24 @@ export default class Cart {
 
   renderOrderForm() {
     return createElement(`<form class="cart-form">
-      <h5 class="cart-form__title">Delivery</h5>
+      <h5 class="cart-form__title">Данные для службы доставки</h5>
       <div class="cart-form__group cart-form__group_row">
-        <input name="name" type="text" class="cart-form__input" placeholder="Name" required value="Santa Claus">
-        <input name="email" type="email" class="cart-form__input" placeholder="Email" required value="john@gmail.com">
-        <input name="tel" type="tel" class="cart-form__input" placeholder="Phone" required value="+1234567">
+        <input name="name" type="text" class="cart-form__input" placeholder="Name" required value="Ваше имя">
+        <input name="email" type="email" class="cart-form__input" placeholder="Email" required value="Ваш e-mail">
+        <input name="tel" type="tel" class="cart-form__input" placeholder="Phone" required value="Ваш телефон">
       </div>
       <div class="cart-form__group">
-        <input name="address" type="text" class="cart-form__input" placeholder="Address" required value="North, Lapland, Snow Home">
+        <input name="address" type="text" class="cart-form__input" placeholder="Address" required value="Ваш адресс">
       </div>
       <div class="cart-buttons">
         <div class="cart-buttons__buttons btn-group">
           <div class="cart-buttons__info">
-            <span class="cart-buttons__info-text">total</span>
-            <span class="cart-buttons__info-price">€${this.getTotalPrice().toFixed(
+            <span class="cart-buttons__info-text">Итого</span>
+            <span class="cart-buttons__info-price">₽${this.getTotalPrice().toFixed(
               2
             )}</span>
           </div>
-          <button type="submit" class="cart-buttons__button btn-group__button button">order</button>
+          <button type="submit" class="cart-buttons__button btn-group__button button">Далее</button>
         </div>
       </div>
     </form>`);
@@ -163,10 +163,10 @@ export default class Cart {
     } else {
       this.modalBody.querySelector(`[data-product-id="${product.id}"] .cart-counter__count`).innerHTML = count;
 
-      this.modalBody.querySelector(`[data-product-id="${product.id}"] .cart-product__price`).innerHTML = '€' + (count * product.price).toFixed(2);
+      this.modalBody.querySelector(`[data-product-id="${product.id}"] .cart-product__price`).innerHTML = '₽' + (count * product.price).toFixed(2);
     }
 
-    this.modalBody.querySelector(`.cart-buttons__info-price`).innerHTML = '€' + this.getTotalPrice().toFixed(2);
+    this.modalBody.querySelector(`.cart-buttons__info-price`).innerHTML = '₽' + this.getTotalPrice().toFixed(2);
   }
 
   async onSubmit(event) {
@@ -180,7 +180,7 @@ export default class Cart {
 
     await fetch('https://httpbin.org/post', { method: 'POST', body: userData });
 
-    this.modal.setTitle("Success!");
+    this.modal.setTitle("Отлично!");
     this.modalBody
       .querySelector('button[type="submit"]')
       .classList.remove("is-loading");
@@ -191,8 +191,8 @@ export default class Cart {
     this.modalBody.innerHTML = `
       <div class="modal__body-inner">
         <p>
-          Order successful! Your order is being cooked :) <br>
-          We’ll notify you about delivery time shortly.<br>
+        Заказ принят! Ваш заказ собирается :) <br>
+        Мы сообщим вам о сроке доставки в ближайшее время.<br>
           <img src="/assets/images/delivery.gif">
         </p>
       </div>

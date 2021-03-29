@@ -1,38 +1,38 @@
 export default [
   {
     id: '',
-    name: 'All'
+    name: 'Общий список'
   },
   {
     id: 'salads',
-    name: 'Salads'
+    name: 'Детектив'
   },
   {
     id: 'soups',
-    name: 'Soups'
+    name: 'Приключения'
   },
   {
     id: 'chicken-dishes',
-    name: 'Chicken dishes'
+    name: 'Фантастика'
   },
   {
     id: 'beef-dishes',
-    name: 'Beef dishes'
+    name: 'Мелодрама'
   },
   {
     id: 'seafood-dishes',
-    name: 'Seafood dishes'
+    name: 'Хобби и досуг'
   },
   {
     id: 'vegetable-dishes',
-    name: 'Vegetable dishes'
+    name: 'Публицистика'
   },
   {
     id: 'bits-and-bites',
-    name: 'Bits and bites'
+    name: 'Мелодрама'
   },
   {
     id: 'on-the-side',
-    name: 'On the side'
+    name: 'Религия'
   }
 ];

@@ -15,8 +15,8 @@ export default class ProductCard {
           src="/assets/images/products/${this.product.image}"
           class="card__image"
           alt="product"
-        />
-        <span class="card__price">€${this.product.price.toFixed(2)}</span>
+                  />
+        <span class="card__price">₽${this.product.price.toFixed(2)}</span>
       </div>
       <div class="card__body">
         <div class="card__title">${escapeHtml(this.product.name)}</div>
