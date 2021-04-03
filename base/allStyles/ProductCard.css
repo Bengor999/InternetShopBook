@@ -9,11 +9,12 @@
 
 .card:hover,
 .card:hover .card__body {
-  background-color: #3b3a31;
+  background-color: #505250;
 }
 
 .card:hover .card__top {
-  background-color: #4e4d41;
+  background-color: #d0f3ed;
+  border-radius: 10px;
 }
 
 .card__top {
@@ -23,7 +24,8 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: var(--color-black-middle);
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .card__image {
