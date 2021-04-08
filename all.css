@@ -1,22 +1,22 @@
 /* Carousel */
-@import '../allStyles/Carousel.css';
+@import '/base/allStyles/Carousel.css';
 
 /* RibbonMenu */
-@import '../allStyles/RibbonMenu.css';
+@import '/base/allStyles/RibbonMenu.css';
 
 /* StepSlider */
-@import '../allStyles/StepSlider.css';
+@import '/base/allStyles/StepSlider.css';
 
 /* ProductCard */
-@import '../allStyles/ProductCard.css';
+@import '/base/allStyles/ProductCard.css';
 /* ProductsGrid */
-@import '../allStyles/ProductsGrid.css';
+@import '/base/allStyles/ProductsGrid.css';
 
 /* Modal */
-@import '../allStyles/Modal.css';
+@import '/base/allStyles/Modal.css';
 /* CartIcon */
-@import '../allStyles/CartIcon.css';
+@import '/base/allStyles/CartIcon.css';
 /* Cart */
-@import '../allStyles/Cart.css';
+@import '/base/allStyles/Cart.css';
 
 @import './filters.css'
