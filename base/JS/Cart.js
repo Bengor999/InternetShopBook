@@ -109,7 +109,7 @@ export default class Cart {
   renderModal() {
     this.modal = new Modal();
 
-    this.modal.setTitle("Your order");
+    this.modal.setTitle("Ваш заказ");
 
     this.modalBody = document.createElement(`div`);
 
